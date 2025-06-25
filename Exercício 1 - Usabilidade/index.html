@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login - TecnoTrends</title>
+  <!-- responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icone da senha -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- fonte usada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- caixa do form -->
+  <div class="login-box">
+    <form action="" method="post" role="form">
+      <!-- logotipo da empresa -->
+      <img src="images/logo.png" alt="TecnoTrends-logo" class="logo" title="TecnoTrends - Tecnologia Educacional">
+
+      <!-- cpf/email do usuário -->
+      <div class="form-group">
+        <label for="cpfEmail">USUÁRIO:</label>
+        <input type="text" id="cpfEmail" placeholder="Digite seu CPF ou e-mail" aria-label="CPF ou e-mail" required>
+      </div>
+
+      <!-- senha usuário -->
+      <div class="form-group">
+        <label for="password">SENHA:</label>
+        <div class="password-container">
+          <input type="password" id="password" placeholder="Digite sua senha" required>
+          <i class="fas fa-eye" id="togglePassword" aria-label="Senha" title="Exibir/Esconder senha"></i>
+        </div>
+      </div>
+
+      <!-- link de acesso p/ email -->
+      <a href="mailto:tecnologia@tecnotrends.com.br" aria-label="Receber link de acesso por e-mail"
+        title="Clique para receber link de acesso por e-mail">Receber link de acesso por e-mail</a>
+
+      <!-- botao de acao -->
+      <button type="submit" class="btn-entrar" role="button" aria-label="Entrar no sistema" title="Clique para entrar"
+        >Entrar</button>
+    </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
